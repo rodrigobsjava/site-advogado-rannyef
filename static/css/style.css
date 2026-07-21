@@ -1,0 +1,73 @@
+/* =======================
+   VARIÁVEIS
+======================= */
+
+:root {
+    --cor-primaria: #000529;
+    --cor-secundaria: #ffffff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* =======================
+   HERO
+======================= */
+
+.hero-banner {
+    background-color: var(--cor-primaria);
+
+    min-height: 90vh;
+}
+
+.hero-banner img {
+    max-height: 600px;
+
+    object-fit: contain;
+}
+
+/* =======================
+   APRESENTAÇÃO
+======================= */
+
+.is-justify {
+    text-align: justify;
+}
+
+/* =======================
+   SERVIÇOS
+======================= */
+
+#servicos .box {
+    background-color: rgba(255, 255, 255, 0.06);
+
+    border: none;
+}
+
+#servicos p,
+#servicos .subtitle {
+    color: white;
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer.footer {
+    padding: 3rem 1.5rem;
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media (max-width: 768px) {
+    .hero-banner {
+        min-height: auto;
+    }
+
+    .hero-banner img {
+        max-height: 400px;
+    }
+}

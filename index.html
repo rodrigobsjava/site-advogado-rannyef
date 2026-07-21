@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rannyef</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script src="/static/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- 1. Header / Topo -->
+    <header>
+        <nav class="navbar has-background-link-dark is-fixed-top is-transparent" role="navigation"
+            aria-label="main navigation">
+            <div class="navbar-brand">
+                <!-- Logo -->
+                <a href="#" class="navbar-item has-text-white has-text-weight-bold">RANNYEF</a>
+                <button role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+                    data-target="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Menu de navegação -->
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <a href="#hero" class="navbar-item">Home</a>
+                    <a href="#services" class="navbar-item">Serviços</a>
+                    <a href="#consult" class="navbar-item">Consultaria</a>
+                </div>
+                <!-- Botão de contato -->
+                <div class="navbar-end">
+                    <a href="#contato"
+                        class="navbar-item button has-background-white has-text-link-dark has-text-weight-bold">Contato</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="hero" class="hero hero-banner">
+
+        <div class="hero-body">
+
+            <div class="container">
+
+                <div class="columns is-vcentered">
+
+                    <div class="column is-half">
+
+                        <h1 class="title has-text-white">
+                            Excelência Jurídica que Protege Seus Direitos
+                        </h1>
+
+                        <p class="subtitle has-text-white">
+                            Soluções rápidas e eficazes com atendimento humanizado.
+                        </p>
+
+                        <a href="#contato" class="button is-white has-text-link-dark is-medium">
+                            Falar com Rannyef
+                        </a>
+
+                    </div>
+
+
+                    <div class="column is-half has-text-centered">
+
+                        <figure class="image">
+                            <img src="static/img/rannyef_1_2.png" alt="Advogado Rannyef Barbosa De Sousa">
+                        </figure>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 3. Sessão de Apresentação -->
+    <section id="apresentacao" class="section has-background-white">
+        <div class="container columns is-vcentered">
+            <!-- Imagem do advogado -->
+            <div class="column is-half">
+                <figure class="image">
+                    <img src="static/img/Imagens de Escritorio De Advocacia.jpeg" alt="Advogado">
+                </figure>
+            </div>
+            <!-- Texto introdutório -->
+            <div class="column is-half mx-4 has-text-link-dark">
+                <h2 class="title has-text-link-dark">Quem Somos</h2>
+                <p class="is-justify">
+                    Atendimento jurídico personalizado com foco em resultados práticos.
+                    <br><strong class="has-text-link-dark">Rannyef Barbosa De Sousa</strong> — <em>OAB/UF 00000</em>
+                </p>
+                <p class="mt-4">
+                    Atuamos de forma estratégica nas áreas listadas abaixo. Agende uma primeira conversa
+                    pelo WhatsApp ou e-mail.
+                </p>
+                <a href="#servicos" class="button is-link mt-4">Conheça Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sessão de Serviços -->
+    <section id="servicos" class="section has-background-link-dark">
+        <div class="container">
+            <!-- Título -->
+            <h2 class="title has-text-centered has-text-white">Áreas de Atuação</h2>
+            <!-- Cards de serviços -->
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <article class="box has-text-centered">
+                        <span class="icon is-large"><i class="fas fa-gavel fa-2x"></i></span>
+                        <h3 class="subtitle">Direito Penal</h3>
+                        <p>Atuação em defesa criminal e acompanhamento de processos penais.</p>
+                    </article>
+                </div>
+
+                <div class="column is-6">
+                    <article class="box has-text-centered">
+                        <span class="icon is-large"><i class="fas fa-balance-scale fa-2x"></i></span>
+                        <h3 class="subtitle">Direito Civil</h3>
+                        <p>Contratos, indenizações, litígios e proteção de interesses pessoais.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sessão de Consultoria Jurídica -->
+    <section id="consultoria" class="section has-background-dark">
+        <div class="container has-text-white">
+            <div class="columns is-vcentered">
+                <!-- Texto sobre qualidade -->
+                <div class="column is-half">
+                    <h2 class="title has-text-white">Consultoria Jurídica</h2>
+                    <p class="is-justify">
+                        Orientações objetivas para tomada de decisão. Atendimento inicial por mensagem para avaliação do
+                        caso e indicação dos próximos passos.
+                    </p>
+                    <ul class="mt-4">
+                        <!-- Colocar ícones -->
+                        <li> Atendimento por WhatsApp</li>
+                        <li> Consultoria por vídeo ou presencial</li>
+                        <li> Confidencialidade e ética profissional</li>
+                    </ul>
+                    <div class="mt-4">
+                        <!-- exemplo de botão WhatsApp com mensagem pronta (substitua XXXXXXXXXX) -->
+                        <!-- Ajuste para mobile -->
+                        <!-- Colocar ícones -->
+                        <a class="button is-link is-medium contact-btn"
+                            href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                            target="_blank" rel="noopener noreferrer">
+                            <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                            <span> Falar no WhatsApp </span>
+                        </a>
+                        <a class="button is-white has-text-link-dark is-medium contact-btn"
+                            href="mailto:contato@advogado.com?subject=Consulta%20Jur%C3%ADdica">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span>Enviar E-mail</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagem do advogado -->
+                <div class="column is-half">
+                    <figure class="image is-3by2">
+                        <img src="static/img/Scales of justice in a lawyers office.jpeg" alt="Consultoria Jurídica">
+                    </figure>
+                </div>
+                <!-- Depoimento de cliente -->
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer id="contato" class="footer has-background-black has-text-white">
+        <div class="content has-text-centered">
+            <h3 class="has-text-white">Contato</h3>
+            <!-- Colocar ícones -->
+            <p><i class="fas fa-map-marker-alt"></i> Endereço do escritório (opcional)</p>
+            <p><i class="fas fa-phone"></i> (00) 00000-0000</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:contato@advogado.com"
+                    class="has-text-white">contato@advogado.com</a></p>
+
+            <div class="mt-3">
+                <a class="button is-link is-medium contact-btn"
+                    href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta."
+                    target="_blank" rel="noopener noreferrer">
+                    <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                    <span> Falar no WhatsApp </span>
+                </a>
+            </div>
+
+            <p class="mt-5">© <span id="year"></span> Rannyef Barbosa De Sousa — OAB/UF 00000</p>
+            <p class="is-size-7 mt-2">Desenvolvido por <a href="#" class="has-text-white">Rodrigo Barbosa De Sousa</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        // atualiza o ano no footer
+        document.addEventListener('DOMContentLoaded', function () {
+            const y = new Date().getFullYear();
+            document.getElementById('year').innerText = y;
+        });
+    </script>
+</body>
+
+</html>
