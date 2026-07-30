@@ -1,73 +1,147 @@
-/* =======================
-   VARIÁVEIS
-======================= */
+/* =========================================================
+   SITE ADVOGADO RANNYEF
+   CSS PERSONALIZÁVEL
+   ---------------------------------------------------------
+   Bulma é responsável pela maior parte do layout.
+   Este arquivo contém apenas regras específicas do projeto.
+   ========================================================= */
+
+
+/* =========================================================
+   1. VARIÁVEIS GLOBAIS
+   ========================================================= */
 
 :root {
-    --cor-primaria: #000529;
-    --cor-secundaria: #ffffff;
+    --color-primary: #000529;
+    --color-white: #ffffff;
+}
+
+
+/* =========================================================
+   2. BASE
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Inter", sans-serif;
 }
 
-/* =======================
-   HERO
-======================= */
+
+/* =========================================================
+   3. HEADER / NAVEGAÇÃO
+   ========================================================= */
+
+.site-header {
+    position: relative;
+    z-index: 30;
+}
+
+
+/* =========================================================
+   4. HERO
+   ========================================================= */
 
 .hero-banner {
-    background-color: var(--cor-primaria);
-
-    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+    /* background-color: var(--color-primary); */
+    background: linear-gradient(var(--color-primary), rgba(0,0,0,.4));
 }
 
-.hero-banner img {
-    max-height: 600px;
 
-    object-fit: contain;
+/* Conteúdo textual do Hero */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
-/* =======================
-   APRESENTAÇÃO
-======================= */
 
-.is-justify {
-    text-align: justify;
+/* Imagem do advogado */
+
+.hero-photo {
+    position: relative;
+    z-index: 1;
 }
 
-/* =======================
-   SERVIÇOS
-======================= */
-
-#servicos .box {
-    background-color: rgba(255, 255, 255, 0.06);
-
-    border: none;
+.hero-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
 }
 
-#servicos p,
-#servicos .subtitle {
-    color: white;
+
+/* =========================================================
+   5. APRESENTAÇÃO
+   ========================================================= */
+
+.presentation-image img,
+.consultoria-image img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-/* =======================
-   FOOTER
-======================= */
 
-footer.footer {
-    padding: 3rem 1.5rem;
+/* =========================================================
+   6. SERVIÇOS
+   ========================================================= */
+
+.services-section {
+    background-color: var(--color-primary);
 }
 
-/* =======================
-   MOBILE
-======================= */
+.service-card {
+    height: 100%;
+}
 
-@media (max-width: 768px) {
+
+/* =========================================================
+   7. CONSULTORIA
+   ========================================================= */
+
+.consultoria-section {
+    background-color: #1a1a1a;
+}
+
+
+/* =========================================================
+   8. FOOTER
+   ========================================================= */
+
+.site-footer {
+    background-color: #000000;
+}
+
+
+/* =========================================================
+   9. RESPONSIVIDADE
+   ---------------------------------------------------------
+   Mobile-first.
+   O Bulma continua sendo responsável pelo comportamento
+   padrão das colunas e componentes.
+   ========================================================= */
+
+@media screen and (min-width: 768px) {
+
     .hero-banner {
-        min-height: auto;
+        min-height: 80vh;
+        text-align: center;
     }
 
-    .hero-banner img {
-        max-height: 400px;
+    .hero-photo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
+
+    .hero-photo img {
+        max-height: 70vh;
+        width: auto;
+    }
+
 }

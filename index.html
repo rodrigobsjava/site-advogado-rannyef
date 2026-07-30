@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rannyef</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/style-refatoring.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
-    <script src="/static/js/script.js" defer></script>
+    <script src="static/js/script.js" defer></script>
 </head>
 
 <body>
@@ -27,13 +27,12 @@
                     <span aria-hidden="true"></span>
                 </button>
             </div>
-
             <!-- Menu de navegação -->
             <div class="navbar-menu" id="navMenu">
                 <div class="navbar-start">
                     <a href="#hero" class="navbar-item">Home</a>
-                    <a href="#services" class="navbar-item">Serviços</a>
-                    <a href="#consult" class="navbar-item">Consultaria</a>
+                    <a href="#servicos" class="navbar-item">Serviços</a>
+                    <a href="#consultoria" class="navbar-item">Consultaria</a>
                 </div>
                 <!-- Botão de contato -->
                 <div class="navbar-end">
@@ -41,50 +40,67 @@
                         class="navbar-item button has-background-white has-text-link-dark has-text-weight-bold">Contato</a>
                 </div>
             </div>
-
         </nav>
     </header>
 
     <!-- 2. Hero Section -->
     <section id="hero" class="hero hero-banner">
-
         <div class="hero-body">
-
             <div class="container">
+                <div class="columns is-vcentered is-variable is-8">
+                    <!-- Texto -->
 
-                <div class="columns is-vcentered">
+                    <!-- <article class="column is-6">
+                        <header>
+                            <h1 class="title is-1 has-text-white">
+                                Excelência Jurídica que Protege Seus Direitos
+                            </h1>
 
-                    <div class="column is-half">
-
-                        <h1 class="title has-text-white">
+                            <p class="subtitle is-5 has-text-white">
+                                Soluções rápidas e eficazes com atendimento humanizado.
+                            </p>
+                        </header>
+                        <br>
+                        <nav aria-label="Contato rápido" class="buttons mt-3">
+                            <a href="#contato" class="button is-white has-text-link-dark is-medium">
+                                Falar com Rannyef
+                            </a>
+                            <a href="#servicos" class="button is-link is-medium is-outlined">
+                                    Áreas de Atuação
+                            </a>
+                        </nav>
+                    </article> -->
+                    <article class="column is-6">
+                        <h1 class="title is-1 has-text-white">
                             Excelência Jurídica que Protege Seus Direitos
                         </h1>
 
-                        <p class="subtitle has-text-white">
-                            Soluções rápidas e eficazes com atendimento humanizado.
+                        <p class="subtitle is-4 has-text-white">
+                            Atendimento jurídico estratégico, transparente e humanizado para
+                            pessoas físicas e empresas.
                         </p>
 
-                        <a href="#contato" class="button is-white has-text-link-dark is-medium">
-                            Falar com Rannyef
-                        </a>
+                        <div class="columns ml-1 is-vcentered mt-4">
+                            <a href="#contato" class="button mr-3 is-white is-medium is-mobile">
+                                Falar com Rannyef
+                            </a>
 
-                    </div>
+                            <a href="#servicos" class="button is-link is-medium is-outlined is-mobile">
+                                Áreas de Atuação
+                            </a>
+                        </div>
+                    </article>
 
+                    <!-- Foto -->
 
-                    <div class="column is-half has-text-centered">
-
+                    <aside class="column is-6 has-text-centered">
                         <figure class="image">
-                            <img src="static/img/rannyef_1_2.png" alt="Advogado Rannyef Barbosa De Sousa">
+                            <img class="" src="static/img/rannyef_1_3.png" alt="Advogado Rannyef Barbosa de Sousa" />
                         </figure>
-
-                    </div>
-
+                    </aside>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
     <!-- 3. Sessão de Apresentação -->
@@ -93,7 +109,7 @@
             <!-- Imagem do advogado -->
             <div class="column is-half">
                 <figure class="image">
-                    <img src="static/img/Imagens de Escritorio De Advocacia.jpeg" alt="Advogado">
+                    <img src="static/img/Imagens de Escritorio De Advocacia.jpeg" alt="Advogado" />
                 </figure>
             </div>
             <!-- Texto introdutório -->
@@ -101,11 +117,12 @@
                 <h2 class="title has-text-link-dark">Quem Somos</h2>
                 <p class="is-justify">
                     Atendimento jurídico personalizado com foco em resultados práticos.
-                    <br><strong class="has-text-link-dark">Rannyef Barbosa De Sousa</strong> — <em>OAB/UF 00000</em>
+                    <br /><strong class="has-text-link-dark">Rannyef Barbosa De Sousa</strong>
+                    — <em>OAB/UF 00000</em>
                 </p>
                 <p class="mt-4">
-                    Atuamos de forma estratégica nas áreas listadas abaixo. Agende uma primeira conversa
-                    pelo WhatsApp ou e-mail.
+                    Atuamos de forma estratégica nas áreas listadas abaixo. Agende uma
+                    primeira conversa pelo WhatsApp ou e-mail.
                 </p>
                 <a href="#servicos" class="button is-link mt-4">Conheça Nossos Serviços</a>
             </div>
@@ -115,23 +132,80 @@
     <!-- 4. Sessão de Serviços -->
     <section id="servicos" class="section has-background-link-dark">
         <div class="container">
-            <!-- Título -->
-            <h2 class="title has-text-centered has-text-white">Áreas de Atuação</h2>
-            <!-- Cards de serviços -->
+            <header class="has-text-centered mb-6">
+                <h2 class="title has-text-white">Áreas de Atuação</h2>
+
+                <p class="subtitle has-text-white">
+                    Atendimento jurídico especializado em diferentes áreas do Direito.
+                </p>
+            </header>
+
             <div class="columns is-multiline">
+                <!-- Card -->
+
                 <div class="column is-6">
-                    <article class="box has-text-centered">
-                        <span class="icon is-large"><i class="fas fa-gavel fa-2x"></i></span>
-                        <h3 class="subtitle">Direito Penal</h3>
-                        <p>Atuação em defesa criminal e acompanhamento de processos penais.</p>
+                    <article class="box service-card">
+                        <span class="icon is-large has-text-link">
+                            <i class="fas fa-gavel fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-5 mt-4">Direito Penal</h3>
+
+                        <p>
+                            Defesa técnica em processos criminais, acompanhamento de
+                            investigações, audiências, recursos e consultoria preventiva.
+                        </p>
                     </article>
                 </div>
 
+                <!-- Card -->
+
                 <div class="column is-6">
-                    <article class="box has-text-centered">
-                        <span class="icon is-large"><i class="fas fa-balance-scale fa-2x"></i></span>
-                        <h3 class="subtitle">Direito Civil</h3>
-                        <p>Contratos, indenizações, litígios e proteção de interesses pessoais.</p>
+                    <article class="box service-card">
+                        <span class="icon is-large has-text-link">
+                            <i class="fas fa-balance-scale fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-5 mt-4">Direito Civil</h3>
+
+                        <p>
+                            Atuação em contratos, responsabilidade civil, indenizações,
+                            obrigações, família e patrimônio.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Card -->
+
+                <div class="column is-6">
+                    <article class="box service-card">
+                        <span class="icon is-large has-text-link">
+                            <i class="fas fa-file-signature fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-5 mt-4">Consultoria Jurídica</h3>
+
+                        <p>
+                            Orientação preventiva para pessoas físicas e empresas, reduzindo
+                            riscos e proporcionando maior segurança jurídica.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Card -->
+
+                <div class="column is-6">
+                    <article class="box service-card">
+                        <span class="icon is-large has-text-link">
+                            <i class="fas fa-user-shield fa-2x"></i>
+                        </span>
+
+                        <h3 class="title is-5 mt-4">Atendimento Personalizado</h3>
+
+                        <p>
+                            Cada caso recebe análise individual, estratégia própria e
+                            comunicação clara durante todas as etapas.
+                        </p>
                     </article>
                 </div>
             </div>
@@ -146,14 +220,15 @@
                 <div class="column is-half">
                     <h2 class="title has-text-white">Consultoria Jurídica</h2>
                     <p class="is-justify">
-                        Orientações objetivas para tomada de decisão. Atendimento inicial por mensagem para avaliação do
-                        caso e indicação dos próximos passos.
+                        Orientações objetivas para tomada de decisão. Atendimento inicial
+                        por mensagem para avaliação do caso e indicação dos próximos
+                        passos.
                     </p>
                     <ul class="mt-4">
                         <!-- Colocar ícones -->
-                        <li> Atendimento por WhatsApp</li>
-                        <li> Consultoria por vídeo ou presencial</li>
-                        <li> Confidencialidade e ética profissional</li>
+                        <li>Atendimento por WhatsApp</li>
+                        <li>Consultoria por vídeo ou presencial</li>
+                        <li>Confidencialidade e ética profissional</li>
                     </ul>
                     <div class="mt-4">
                         <!-- exemplo de botão WhatsApp com mensagem pronta (substitua XXXXXXXXXX) -->
@@ -176,13 +251,11 @@
                 <!-- Imagem do advogado -->
                 <div class="column is-half">
                     <figure class="image is-3by2">
-                        <img src="static/img/Scales of justice in a lawyers office.jpeg" alt="Consultoria Jurídica">
+                        <img src="static/img/Scales of justice in a lawyers office.jpeg" alt="Consultoria Jurídica" />
                     </figure>
                 </div>
                 <!-- Depoimento de cliente -->
             </div>
-
-
         </div>
     </section>
 
@@ -190,10 +263,15 @@
         <div class="content has-text-centered">
             <h3 class="has-text-white">Contato</h3>
             <!-- Colocar ícones -->
-            <p><i class="fas fa-map-marker-alt"></i> Endereço do escritório (opcional)</p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i> Endereço do escritório
+                (opcional)
+            </p>
             <p><i class="fas fa-phone"></i> (00) 00000-0000</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:contato@advogado.com"
-                    class="has-text-white">contato@advogado.com</a></p>
+            <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contato@advogado.com" class="has-text-white">contato@advogado.com</a>
+            </p>
 
             <div class="mt-3">
                 <a class="button is-link is-medium contact-btn"
@@ -204,16 +282,20 @@
                 </a>
             </div>
 
-            <p class="mt-5">© <span id="year"></span> Rannyef Barbosa De Sousa — OAB/UF 00000</p>
-            <p class="is-size-7 mt-2">Desenvolvido por <a href="#" class="has-text-white">Rodrigo Barbosa De Sousa</a>
+            <p class="mt-5">
+                © <span id="year"></span> Rannyef Barbosa De Sousa — OAB/UF 00000
+            </p>
+            <p class="is-size-7 mt-2">
+                Desenvolvido por
+                <a href="#" class="has-text-white">Rodrigo Barbosa De Sousa</a>
             </p>
         </div>
     </footer>
     <script>
         // atualiza o ano no footer
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener("DOMContentLoaded", function () {
             const y = new Date().getFullYear();
-            document.getElementById('year').innerText = y;
+            document.getElementById("year").innerText = y;
         });
     </script>
 </body>
